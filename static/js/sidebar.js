@@ -31,9 +31,16 @@ buttons.forEach((button) => {
     });
 });
 
-// branch contents-separated 에서는 생략 가능.
-// const theYoungest = document.querySelectorAll('.youngest');
+const theYoungest = document.querySelectorAll('.youngest');
 
+theYoungest.forEach(youngest => {
+    const uri = youngest.value;
+    youngest.addEventListener('click', () => {
+        window.open(uri, '_blank'); // 새 탭에서 uri 에 GET 요청.
+    });
+});
+
+// branch contents-separated 에서는 생략 가능.
 // theYoungest.forEach((youngest) => {
 //     youngest.addEventListener('click', event => {
 //         const uri = event.target.value;

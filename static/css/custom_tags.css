@@ -19,6 +19,6 @@ main {
 }
 
 a, a:visited {
-    text-decoration: underline;
+    text-decoration: none;
     color: black;
 }
