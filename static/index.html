@@ -18,8 +18,8 @@
         <div class="row" style="width: 100%;"> <!-- wraps sidebar and main -->
             
             <!-- sidebar-->
-            <aside class="sidebar col-md-auto">
-                <h3 style="padding: 0 0 0 .5rem;">side bar</h3>
+            <aside class="sidebar col">
+                <h3 style="padding: 0 0 0 .5rem;">table of contents</h3>
                 <ul class="tree-depth-1">
                     <li><button class="btn">1. 생산조건관리 (항목관리 담당자 선정)</button>
                         <ul class="tree-depth-2">
@@ -27,8 +27,8 @@
                                 <ul class="tree-depth-3">
                                     <li><button class="btn">1.1.1 표준류(관리계획서,작업표준서,설비일상점검표 등)와 실제공정 일치성 확인</button>
                                         <ul class="tree-depth-4">
-                                            <li><button class="btn youngest" value="../static/to_read/spring-boot-reference.pdf">1.NQ5 TRIM ASSY RR PLR L-RH_공정관리계획서.xls</button></li>
-                                            <li><button class="btn youngest" value="../static/to_read/factfile.pdf">대표문서파일 1개 파일명(엑셀, PPT, PDF등)</button></li>
+                                            <li><button class="btn youngest" value="../static/to_read/spring-boot-reference.pdf"><a href="../static/to_read/spring-boot-reference.pdf" target="_blank">1.NQ5 TRIM ASSY RR PLR L-RH_공정관리계획서.xls</a></button></li>
+                                            <li><button class="btn youngest" value="../static/to_read/factfile.pdf"><a href="../static/to_read/factfile.pdf" target="_blank">1개 파일명(엑셀, PPT, PDF등)</a></button></li>
                                         </ul>
                                     </li>
                                     <li><button class="btn">1.1.2 고객과 협의된 검사협정서,검사기준서 기준과 실제 업무절차 일치성</button></li>
@@ -54,10 +54,13 @@
             </aside>
 
             <!-- main -->
-            <main class="main-content col"> <!-- wraps viewer(iframe) and breadcrumbs -->
+            <!-- wraps viewer(iframe) and breadcrumbs -->
+            <!--
+            <main class="main-content col"> 
                 <div id="breadcrumbs">breadcrumbs</div>
                 <iframe id="pdf-viewer" src=""></iframe>
             </main>
+            -->
         </div> <!-- end of sidebar and main-->
     </div>
 

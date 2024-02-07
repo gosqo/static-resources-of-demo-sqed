@@ -31,14 +31,15 @@ buttons.forEach((button) => {
     });
 });
 
-const theYoungest = document.querySelectorAll('.youngest');
+// branch contents-separated 에서는 생략 가능.
+// const theYoungest = document.querySelectorAll('.youngest');
 
-theYoungest.forEach((youngest) => {
-    youngest.addEventListener('click', event => {
-        const uri = event.target.value;
-        pdfViewer.setAttribute('src', uri);
-    });
-});
+// theYoungest.forEach((youngest) => {
+//     youngest.addEventListener('click', event => {
+//         const uri = event.target.value;
+//         pdfViewer.setAttribute('src', uri);
+//     });
+// });
 
 // 이벤트 타겟(목록 버튼) 다음에 (형제로 sibling) 관리 버튼 추가.
 function makeManageButton(event) {
@@ -46,6 +47,7 @@ function makeManageButton(event) {
     const manageButton = document.createElement('button');
     manageButton.className = 'btn btn-warning manage-btn';
     manageButton.textContent = '관리';
+    manageButton.style.marginLeft = '.4rem';
 
     // 버튼 요소 다음 형제로 manageButton 추가.
     event.target.after(manageButton);

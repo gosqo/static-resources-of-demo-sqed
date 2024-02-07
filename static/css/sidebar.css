@@ -3,8 +3,10 @@
     overflow-x: auto;
     overflow-y: auto; /* make scroll */
     background-color: #b0b0b0; 
+    /* 
     min-width: 20rem;
-    max-width: 20rem;
+    max-width: 20rem; 
+    */
 
 }
 
